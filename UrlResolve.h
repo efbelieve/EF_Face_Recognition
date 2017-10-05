@@ -1,3 +1,5 @@
+#ifndef  __URLSOLVE_H
+#define  __URLSOLVE_H
 #include <string>
 #include <sys/types.h>
 #include <regex.h>
@@ -33,3 +35,4 @@ private:
 	std::string url_resolve_result[MAX_URL_STRUCTURE];
 	std::string m_url;
 };
+#endif

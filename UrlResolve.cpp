@@ -22,7 +22,7 @@ bool UrlResolve::url_resolve(url_st &url_resolve)
 
 	for(int i = MIN_URL_STRUCTURE; i < MAX_URL_STRUCTURE; i++)
 	{
-		if(url_resolve_step(m_url,url_result,regular_expressions[i]) == false)
+		if(!url_resolve_step(m_url,url_result,regular_expressions[i]))
 		{
 			cout << "url_resolve error!" << endl;
 			return false;
